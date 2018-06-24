@@ -217,8 +217,8 @@ end
 
 
 def player_stats(player_name)
-  game_hash.map do |location, team_data|
-    team_data[:team_name][:players].map do |name, stats|
+  game_hash.each do |location, team_data|
+    team_data[:team_name][:players].each do |name, stats|
       binding.pry
       stats
     end
