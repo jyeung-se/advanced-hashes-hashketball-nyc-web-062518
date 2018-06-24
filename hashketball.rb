@@ -213,6 +213,7 @@ def player_numbers(team_name)
           jersey_nums << value
         end
       end
+      end
     end
   end
   jersey_nums
