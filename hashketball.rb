@@ -239,8 +239,8 @@ def big_shoe_rebounds
       if name[:shoe] > largest_shoe_size
         largest_shoe_size = name[:shoe]
         rebounds = name[:rebounds]
+        binding.pry
       end
-      binding.pry
     end
   end
   rebounds
