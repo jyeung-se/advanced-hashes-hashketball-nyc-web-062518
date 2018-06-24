@@ -218,9 +218,9 @@ end
 
 def player_stats(player_name)
   game_hash.each do |location, team_data|
-    team_data[:team_name][:players].each do |name, stats|
-      binding.pry
-      stats
+    team_data[:players].each do |name, stats|
+      if name == player_name
+        stats
     end
   end
 end
