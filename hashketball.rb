@@ -203,7 +203,7 @@ end
 
 
 def player_numbers(team_name)
-  game_hash.map |location, team_data|
+  game_hash.map do |location, team_data|
     if team_data[:team_name] == team_name
       team_data[:number]
     end
