@@ -166,6 +166,7 @@ def shoe_size(player_name)
       team_data[:players].each do |name, data|
       if name == player_name
         data.each do |stats, value|
+          binding.pry
           if stats == :shoe
             size = value
           end
@@ -184,7 +185,6 @@ def team_colors(team)
     if team_data == :colors && team_data[:team_name] == "Brooklyn Nets"
       team_data.each do |stats, value|
         color << value
-        binding.pry
       end
     end
   end
