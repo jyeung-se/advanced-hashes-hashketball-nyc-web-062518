@@ -207,11 +207,10 @@ def player_numbers(team_name)
   game_hash.each do |location, team_data|
     team_data.each do |attritbute, data|
       if attritbute == :team_name && :team_name == team_name
-          data.each do |stats, value|
-            binding.pry
-            if stats == :number
-              jersey_nums << value
-            end
+        data.each do |stats, value|
+          binding.pry
+          if stats == :number
+            jersey_nums << value
           end
         end
       end
