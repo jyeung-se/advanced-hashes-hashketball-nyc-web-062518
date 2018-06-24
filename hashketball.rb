@@ -208,9 +208,10 @@ def player_numbers(team_name)
     team_data.each do |attribute, data|
       binding.pry
       if attribute == :team_name
-          if stats == :number
-            jersey_nums << value
-          end
+        if stats == :number
+          jersey_nums << value
+        end
+      end
     end
   end
   jersey_nums
