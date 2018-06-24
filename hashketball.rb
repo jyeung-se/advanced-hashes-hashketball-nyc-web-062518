@@ -237,6 +237,7 @@ def big_shoe_rebounds
     team_data[:players].each do |name, stats|
       if stats == :shoe
         player_with_largest_shoe = name[:shoe]
+        binding.pry
       end
     end
   end
