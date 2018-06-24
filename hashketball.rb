@@ -222,9 +222,10 @@ def player_stats(player_name)
     team_data[:players].each do |name, stats|
       if name == player_name
         stats
+      end
     end
   end
-end
+  stats
 end
 
 
