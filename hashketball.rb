@@ -202,8 +202,10 @@ end
 
 
 
-def player_numbers
-  
+def player_numbers(team_name)
+  game_hash.each map |location, team_data|
+    team_data[:number]
+  end.join
 end
 
 
