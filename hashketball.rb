@@ -209,7 +209,6 @@ def player_numbers(team_name)
       team_data.each do |attritbute, data|
         if attritbute == :players
           data.each do |stats, value|
-            binding.pry
             if stats == :number
               jersey_nums << value
             end
