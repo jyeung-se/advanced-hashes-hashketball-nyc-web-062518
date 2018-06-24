@@ -196,7 +196,8 @@ def team_names
   teams_array = []
   game_hash.each do |location, team_data|
     if team_data == :team_name
-    teams_array << :team_name
+      teams_array << :team_name
+    end
   end
   teams_array
 end
