@@ -216,8 +216,12 @@ end
 
 
 
-def player_stats
-  
+def player_stats(player_name)
+  game_hash.map do |location, team_data|
+    team_data[:team_name][:players].map do |name, stats|
+      stats
+    end
+  end
 end
 
 
