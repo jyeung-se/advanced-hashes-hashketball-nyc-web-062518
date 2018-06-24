@@ -240,6 +240,7 @@ def big_shoe_rebounds
       end
     end
   end
+  largest_shoe_size
 end
 
 
