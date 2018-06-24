@@ -204,7 +204,9 @@ end
 
 def player_numbers(team_name)
   game_hash.each map |location, team_data|
-    team_data[:number]
+    if team_data[:team_name] == team_name
+      team_data[:number]
+    end
   end.join
 end
 
