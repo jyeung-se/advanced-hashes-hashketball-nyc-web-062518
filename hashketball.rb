@@ -192,7 +192,12 @@ end
 
 
 
-
+def team_names
+  teams_array = []
+  game_hash.each do |team|
+    teams_array << team
+  end
+end
 
 
 
