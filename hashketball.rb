@@ -238,6 +238,7 @@ def big_shoe_rebounds
       binding.pry
       if name == player_name
         player_values = stats
+      end
     end
   end
 end
