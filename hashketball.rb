@@ -246,21 +246,21 @@ def big_shoe_rebounds
 
 
 
-def big_shoe_rebounds
-  player_with_largest_shoe = nil
-  largest_shoe_size = 0
-  biggest_shoes_rebounds = 0
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |name, stats|
-      if name[:shoe] > largest_shoe_size
-        largest_shoe_size = name[:shoe]
-        player_with_largest_shoe = name
-        biggest_shoes_rebounds = name[:rebounds]
-      end
-    end
-  end
-  biggest_shoes_rebounds
-end
+# def big_shoe_rebounds
+#   player_with_largest_shoe = nil
+#   largest_shoe_size = 0
+#   biggest_shoes_rebounds = 0
+#   game_hash.each do |location, team_data|
+#     team_data[:players].each do |name, stats|
+#       if name[:shoe] > largest_shoe_size
+#         largest_shoe_size = name[:shoe]
+#         player_with_largest_shoe = name
+#         biggest_shoes_rebounds = name[:rebounds]
+#       end
+#     end
+#   end
+#   biggest_shoes_rebounds
+# end
 
 
 
