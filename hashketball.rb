@@ -242,7 +242,7 @@ def big_shoe_rebounds
       end
     end
   end
-  largest_shoe_size
+  player_with_largest_shoe[:rebounds]
 end
 
 big_shoe_rebounds
